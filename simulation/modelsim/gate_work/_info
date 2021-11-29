@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\x\code\vhdl\simulation\modelsim
+vmux4
+!i10b 1
+!s100 @ef9Vj4Q3`edHPWCcj<X:0
+I4a6iG[MnE`4NJ1PH^BQkX0
+Va?TdoHZVanlKC9gZ=PV601
+Z1 dC:\Users\x\code\vhdl\simulation\modelsim
+w1638098252
+8homework.vo
+Fhomework.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1638098263.129000
+!s107 homework.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|homework.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0
