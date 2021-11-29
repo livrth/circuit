@@ -5,6 +5,7 @@ source_file = 1, C:/Users/x/code/vhdl/mux4if.vhd
 source_file = 1, C:/Users/x/code/vhdl/mux4case.vhd
 source_file = 1, C:/Users/x/code/vhdl/loop.vhd
 source_file = 1, C:/Users/x/code/vhdl/and3gate.vhd
+source_file = 1, C:/Users/x/code/vhdl/tri_gate.vhd
 source_file = 1, C:/Users/x/code/vhdl/db/homework.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
