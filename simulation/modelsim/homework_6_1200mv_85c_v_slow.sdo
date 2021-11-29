@@ -28,8 +28,8 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
-  (DESIGN "mux4")
-  (DATE "11/29/2021 15:59:51")
+  (DESIGN "MUX41")
+  (DATE "11/29/2021 17:07:14")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -38,7 +38,7 @@
 
   (CELL
     (CELLTYPE "cycloneiv_io_obuf")
-    (INSTANCE q\~output)
+    (INSTANCE y\~output)
     (DELAY
       (ABSOLUTE
         (PORT i (466:466:466) (451:451:451))
@@ -48,7 +48,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE sel\[1\]\~input)
+    (INSTANCE s\[1\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (517:517:517) (691:691:691))
@@ -57,7 +57,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE d0\~input)
+    (INSTANCE a\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (517:517:517) (691:691:691))
@@ -66,7 +66,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE d1\~input)
+    (INSTANCE b\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (507:507:507) (681:681:681))
@@ -75,7 +75,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE sel\[0\]\~input)
+    (INSTANCE s\[0\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (507:507:507) (681:681:681))
@@ -84,7 +84,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_lcell_comb")
-    (INSTANCE Mux0\~0)
+    (INSTANCE y\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3084:3084:3084) (3344:3344:3344))
@@ -100,7 +100,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE d2\~input)
+    (INSTANCE c\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (507:507:507) (681:681:681))
@@ -109,7 +109,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE d3\~input)
+    (INSTANCE d\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (517:517:517) (691:691:691))
@@ -118,7 +118,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_lcell_comb")
-    (INSTANCE Mux0\~1)
+    (INSTANCE y\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3084:3084:3084) (3343:3343:3343))

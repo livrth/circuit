@@ -1,5 +1,5 @@
 Fitter report for homework
-Mon Nov 29 15:59:45 2021
+Mon Nov 29 17:07:06 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,10 +63,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Nov 29 15:59:45 2021           ;
+; Fitter Status                      ; Successful - Mon Nov 29 17:07:06 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; homework                                        ;
-; Top-level Entity Name              ; mux4                                            ;
+; Top-level Entity Name              ; MUX41                                           ;
 ; Family                             ; Cyclone IV GX                                   ;
 ; Device                             ; EP4CGX15BF14C6                                  ;
 ; Timing Models                      ; Final                                           ;
@@ -160,13 +160,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------+-------------------------------+
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
-; q        ; Incomplete set of assignments ;
-; d2       ; Incomplete set of assignments ;
-; sel[1]   ; Incomplete set of assignments ;
-; d1       ; Incomplete set of assignments ;
-; sel[0]   ; Incomplete set of assignments ;
-; d0       ; Incomplete set of assignments ;
-; d3       ; Incomplete set of assignments ;
+; y        ; Incomplete set of assignments ;
+; c        ; Incomplete set of assignments ;
+; s[1]     ; Incomplete set of assignments ;
+; b        ; Incomplete set of assignments ;
+; s[0]     ; Incomplete set of assignments ;
+; a        ; Incomplete set of assignments ;
+; d        ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -334,18 +334,18 @@ The pin-out file can be found in C:/Users/x/code/vhdl/output_files/homework.pin.
 +---------------------------------------------+---------------------+--------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                                                ;
-+--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
-; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ;
-+--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
-; d0     ; A8    ; 8        ; 12           ; 31           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; d1     ; M6    ; 3        ; 12           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; d2     ; A7    ; 8        ; 12           ; 31           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; d3     ; L5    ; 3        ; 14           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; sel[0] ; L7    ; 3        ; 14           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; sel[1] ; N6    ; 3        ; 12           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-+--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                                              ;
++------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
+; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ;
++------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
+; a    ; A8    ; 8        ; 12           ; 31           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; b    ; M6    ; 3        ; 12           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; c    ; A7    ; 8        ; 12           ; 31           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; d    ; L5    ; 3        ; 14           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; s[0] ; L7    ; 3        ; 14           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; s[1] ; N6    ; 3        ; 12           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
++------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -353,7 +353,7 @@ The pin-out file can be found in C:/Users/x/code/vhdl/output_files/homework.pin.
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; q    ; N4    ; 3        ; 10           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; y    ; N4    ; 3        ; 10           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -367,9 +367,9 @@ The pin-out file can be found in C:/Users/x/code/vhdl/output_files/homework.pin.
 ; K5       ; MSEL0                 ; -                        ; -                ; Dedicated Programming Pin ;
 ; J5       ; CONF_DONE             ; -                        ; -                ; Dedicated Programming Pin ;
 ; K6       ; nSTATUS               ; -                        ; -                ; Dedicated Programming Pin ;
-; N4       ; DIFFIO_B1p, CRC_ERROR ; Use as regular IO        ; q                ; Dual Purpose Pin          ;
+; N4       ; DIFFIO_B1p, CRC_ERROR ; Use as regular IO        ; y                ; Dual Purpose Pin          ;
 ; N5       ; DIFFIO_B1n, NCEO      ; Use as programming pin   ; ~ALTERA_NCEO~    ; Dual Purpose Pin          ;
-; M6       ; DIFFIO_B2p, INIT_DONE ; Use as regular IO        ; d1               ; Dual Purpose Pin          ;
+; M6       ; DIFFIO_B2p, INIT_DONE ; Use as regular IO        ; b                ; Dual Purpose Pin          ;
 ; A5       ; DATA0                 ; As input tri-stated      ; ~ALTERA_DATA0~   ; Dual Purpose Pin          ;
 ; B5       ; ASDO                  ; As input tri-stated      ; ~ALTERA_ASDO~    ; Dual Purpose Pin          ;
 ; C5       ; NCSO                  ; As input tri-stated      ; ~ALTERA_NCSO~    ; Dual Purpose Pin          ;
@@ -408,8 +408,8 @@ The pin-out file can be found in C:/Users/x/code/vhdl/output_files/homework.pin.
 ; A4       ; 93         ; 9        ; ~ALTERA_DCLK~                                    ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; On           ;
 ; A5       ; 90         ; 9        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; On           ;
 ; A6       ; 89         ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A7       ; 87         ; 8        ; d2                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; A8       ; 88         ; 8        ; d0                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A7       ; 87         ; 8        ; c                                                ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A8       ; 88         ; 8        ; a                                                ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A9       ; 81         ; 7        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A10      ; 82         ; 7        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A11      ; 79         ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -536,9 +536,9 @@ The pin-out file can be found in C:/Users/x/code/vhdl/output_files/homework.pin.
 ; L2       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L3       ; 16         ; 3        ; ^MSEL2                                           ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; L4       ; 21         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; L5       ; 27         ; 3        ; d3                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; L5       ; 27         ; 3        ; d                                                ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; L6       ;            ; 3        ; VCCIO3                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; L7       ; 28         ; 3        ; sel[0]                                           ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; L7       ; 28         ; 3        ; s[0]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; L8       ;            ; 4        ; VCCIO4                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L9       ; 37         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L10      ;            ; 4        ; VCCIO4                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -550,7 +550,7 @@ The pin-out file can be found in C:/Users/x/code/vhdl/output_files/homework.pin.
 ; M3       ;            ;          ; NC                                               ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; M4       ; 22         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M5       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; M6       ; 25         ; 3        ; d1                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M6       ; 25         ; 3        ; b                                                ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M7       ; 31         ; 4        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; M8       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M9       ; 38         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -561,9 +561,9 @@ The pin-out file can be found in C:/Users/x/code/vhdl/output_files/homework.pin.
 ; N1       ;            ; --       ; VCCL_GXB                                         ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N2       ;            ;          ; NC                                               ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N3       ; 17         ; 3        ; ^MSEL1                                           ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; N4       ; 23         ; 3        ; q                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N4       ; 23         ; 3        ; y                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N5       ; 24         ; 3        ; ~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN       ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; N6       ; 26         ; 3        ; sel[1]                                           ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N6       ; 26         ; 3        ; s[1]                                             ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N7       ; 32         ; 4        ; GND+                                             ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; N8       ; 33         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N9       ; 34         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                  ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -580,24 +580,24 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |mux4                      ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 7    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |mux4               ; work         ;
+; |MUX41                     ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 7    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MUX41              ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                    ;
-+--------+----------+---------------+---------------+-----------------------+-----+------+
-; Name   ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
-+--------+----------+---------------+---------------+-----------------------+-----+------+
-; q      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; d2     ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; sel[1] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; d1     ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; sel[0] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; d0     ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-; d3     ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
-+--------+----------+---------------+---------------+-----------------------+-----+------+
++--------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                  ;
++------+----------+---------------+---------------+-----------------------+-----+------+
+; Name ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
++------+----------+---------------+---------------+-----------------------+-----+------+
+; y    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; c    ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; s[1] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; b    ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; s[0] ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; a    ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
+; d    ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
++------+----------+---------------+---------------+-----------------------+-----+------+
 
 
 +---------------------------------------------------+
@@ -605,36 +605,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; d2                  ;                   ;         ;
-;      - Mux0~1       ; 0                 ; 6       ;
-; sel[1]              ;                   ;         ;
-;      - Mux0~0       ; 0                 ; 6       ;
-;      - Mux0~1       ; 0                 ; 6       ;
-; d1                  ;                   ;         ;
-;      - Mux0~0       ; 0                 ; 6       ;
-; sel[0]              ;                   ;         ;
-;      - Mux0~0       ; 0                 ; 6       ;
-; d0                  ;                   ;         ;
-;      - Mux0~0       ; 0                 ; 6       ;
-; d3                  ;                   ;         ;
-;      - Mux0~1       ; 0                 ; 6       ;
+; c                   ;                   ;         ;
+;      - y~1          ; 0                 ; 6       ;
+; s[1]                ;                   ;         ;
+;      - y~0          ; 0                 ; 6       ;
+;      - y~1          ; 0                 ; 6       ;
+; b                   ;                   ;         ;
+;      - y~0          ; 0                 ; 6       ;
+; s[0]                ;                   ;         ;
+;      - y~0          ; 0                 ; 6       ;
+; a                   ;                   ;         ;
+;      - y~0          ; 0                 ; 6       ;
+; d                   ;                   ;         ;
+;      - y~1          ; 0                 ; 6       ;
 +---------------------+-------------------+---------+
 
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+--------------+------------------+
-; Name         ; Fan-Out          ;
-+--------------+------------------+
-; sel[1]~input ; 2                ;
-; d3~input     ; 1                ;
-; d0~input     ; 1                ;
-; sel[0]~input ; 1                ;
-; d1~input     ; 1                ;
-; d2~input     ; 1                ;
-; Mux0~1       ; 1                ;
-; Mux0~0       ; 1                ;
-+--------------+------------------+
++------------+--------------------+
+; Name       ; Fan-Out            ;
++------------+--------------------+
+; s[1]~input ; 2                  ;
+; d~input    ; 1                  ;
+; a~input    ; 1                  ;
+; s[0]~input ; 1                  ;
+; b~input    ; 1                  ;
+; c~input    ; 1                  ;
+; y~1        ; 1                  ;
+; y~0        ; 1                  ;
++------------+--------------------+
 
 
 +----------------------------------------------------------+
@@ -778,13 +778,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; Total Inapplicable ; 7            ; 7            ; 7            ; 7            ; 7            ; 0         ; 7            ; 7            ; 0         ; 0         ; 7            ; 6            ; 7            ; 7            ; 1            ; 7            ; 6            ; 1            ; 7            ; 7            ; 7            ; 6            ; 7            ; 7            ; 7            ; 7            ; 7            ; 0         ; 7            ; 7            ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; q                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; d2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sel[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; d1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sel[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; d0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; d3                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; y                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; c                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; s[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; b                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; s[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; a                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; d                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -844,13 +844,13 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DCLK~ is reserved at location A4
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Critical Warning (169085): No exact pin location assignment(s) for 7 pins of 7 total pins
-    Info (169086): Pin q not assigned to an exact location on the device
-    Info (169086): Pin d2 not assigned to an exact location on the device
-    Info (169086): Pin sel[1] not assigned to an exact location on the device
-    Info (169086): Pin d1 not assigned to an exact location on the device
-    Info (169086): Pin sel[0] not assigned to an exact location on the device
-    Info (169086): Pin d0 not assigned to an exact location on the device
-    Info (169086): Pin d3 not assigned to an exact location on the device
+    Info (169086): Pin y not assigned to an exact location on the device
+    Info (169086): Pin c not assigned to an exact location on the device
+    Info (169086): Pin s[1] not assigned to an exact location on the device
+    Info (169086): Pin b not assigned to an exact location on the device
+    Info (169086): Pin s[0] not assigned to an exact location on the device
+    Info (169086): Pin a not assigned to an exact location on the device
+    Info (169086): Pin d not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'homework.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -876,7 +876,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 8A does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  2 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  5 pins available
         Info (176213): I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  0 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -889,16 +889,16 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/x/code/vhdl/output_files/homework.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4980 megabytes
-    Info: Processing ended: Mon Nov 29 15:59:45 2021
+    Info: Peak virtual memory: 4981 megabytes
+    Info: Processing ended: Mon Nov 29 17:07:07 2021
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

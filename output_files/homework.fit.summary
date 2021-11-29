@@ -1,7 +1,7 @@
-Fitter Status : Successful - Mon Nov 29 15:59:45 2021
+Fitter Status : Successful - Mon Nov 29 17:07:06 2021
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : homework
-Top-level Entity Name : mux4
+Top-level Entity Name : MUX41
 Family : Cyclone IV GX
 Device : EP4CGX15BF14C6
 Timing Models : Final

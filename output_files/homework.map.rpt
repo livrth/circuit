@@ -1,5 +1,5 @@
 Analysis & Synthesis report for homework
-Mon Nov 29 15:59:40 2021
+Mon Nov 29 20:45:23 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,10 +41,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 29 15:59:40 2021           ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 29 20:45:23 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; homework                                        ;
-; Top-level Entity Name              ; mux4                                            ;
+; Top-level Entity Name              ; MUX41                                           ;
 ; Family                             ; Cyclone IV GX                                   ;
 ; Total logic elements               ; 2                                               ;
 ;     Total combinational functions  ; 2                                               ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; mux4               ; homework           ;
+; Top-level entity name                                                      ; MUX41              ; homework           ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -159,13 +159,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                          ;
-+----------------------------------+-----------------+-----------------+--------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path   ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------+---------+
-; Vhdl2.vhd                        ; yes             ; User VHDL File  ; C:/Users/x/code/vhdl/Vhdl2.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                              ;
++----------------------------------+-----------------+-----------------+------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path       ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------+---------+
+; gates/mux.vhd                    ; yes             ; User VHDL File  ; C:/Users/x/code/vhdl/gates/mux.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -175,7 +175,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; I/O pins                 ; 7                ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; sel[1]~input     ;
+; Maximum fan-out node     ; s[1]~input       ;
 ; Maximum fan-out          ; 2                ;
 ; Total fan-out            ; 16               ;
 ; Average fan-out          ; 1.00             ;
@@ -187,7 +187,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |mux4                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 7    ; 0            ; |mux4               ; work         ;
+; |MUX41                     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 7    ; 0            ; |MUX41              ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -222,31 +222,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 29 15:59:38 2021
+    Info: Processing started: Mon Nov 29 20:45:21 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off homework -c homework
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file homework.vhd
-    Info (12022): Found design unit 1: and_gate-rtl
-    Info (12023): Found entity 1: and_gate
-Info (12021): Found 2 design units, including 1 entities, in source file vhdl2.vhd
-    Info (12022): Found design unit 1: mux4-rtl
-    Info (12023): Found entity 1: mux4
-Info (12021): Found 2 design units, including 1 entities, in source file mux4if.vhd
-    Info (12022): Found design unit 1: mux4if-rtl
-    Info (12023): Found entity 1: mux4if
-Info (12021): Found 2 design units, including 1 entities, in source file mux4case.vhd
-    Info (12022): Found design unit 1: mux4case-rtl
-    Info (12023): Found entity 1: mux4case
-Info (12021): Found 2 design units, including 1 entities, in source file loop.vhd
-    Info (12022): Found design unit 1: logic_and-behave
-    Info (12023): Found entity 1: logic_and
-Info (12021): Found 2 design units, including 1 entities, in source file and3gate.vhd
-    Info (12022): Found design unit 1: and3_gate-behave_arc
-    Info (12023): Found entity 1: and3_gate
-Info (12021): Found 2 design units, including 1 entities, in source file tri_gate.vhd
-    Info (12022): Found design unit 1: tri_gate-behave_arc
-    Info (12023): Found entity 1: tri_gate
-Info (12127): Elaborating entity "mux4" for the top level hierarchy
+Warning (12019): Can't analyze file -- file homework.vhd is missing
+Warning (12019): Can't analyze file -- file Vhdl2.vhd is missing
+Warning (12019): Can't analyze file -- file mux4if.vhd is missing
+Warning (12019): Can't analyze file -- file mux4case.vhd is missing
+Warning (12019): Can't analyze file -- file loop.vhd is missing
+Warning (12019): Can't analyze file -- file and3gate.vhd is missing
+Warning (12019): Can't analyze file -- file tri_gate.vhd is missing
+Warning (12090): Entity "MUX41" obtained from "gates/mux.vhd" instead of from Quartus II megafunction library
+Info (12021): Found 2 design units, including 1 entities, in source file gates/mux.vhd
+    Info (12022): Found design unit 1: MUX41-rtl
+    Info (12023): Found entity 1: MUX41
+Info (12021): Found 3 design units, including 1 entities, in source file gates/decoder.vhd
+    Info (12022): Found design unit 1: DECODER-when_else
+    Info (12022): Found design unit 2: DECODER-behv
+    Info (12023): Found entity 1: DECODER
+Info (12021): Found 2 design units, including 1 entities, in source file gates/comparison.vhd
+    Info (12022): Found design unit 1: comparison-behave_arc
+    Info (12023): Found entity 1: comparison
+Info (12021): Found 2 design units, including 1 entities, in source file gates/bin2gray.vhd
+    Info (12022): Found design unit 1: BIN2GRAY-bin2gray_arch
+    Info (12023): Found entity 1: BIN2GRAY
+Info (12021): Found 2 design units, including 1 entities, in source file gates/basic_dff.vhd
+    Info (12022): Found design unit 1: basic_dff-rtl_arc
+    Info (12023): Found entity 1: basic_dff
+Info (12021): Found 2 design units, including 1 entities, in source file gates/async_rsjkdff.vhd
+    Info (12022): Found design unit 1: async_rsjkff-rtl_arc
+    Info (12023): Found entity 1: async_rsjkff
+Info (12127): Elaborating entity "MUX41" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -254,9 +260,9 @@ Info (21057): Implemented 9 device resources after synthesis - the final resourc
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 2 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4690 megabytes
-    Info: Processing ended: Mon Nov 29 15:59:40 2021
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Mon Nov 29 20:45:23 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
